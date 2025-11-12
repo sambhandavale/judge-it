@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: redis_broker
+    ports:
+      - "6379:6379"
+
+  api:
+    build: ./backend
+    container_name: judge_api
+    command: flask run --host=0.0.0.0 --port=5000
+    ports:
+      - "5000:5000"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./backend:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  worker:
+    build: ./backend
+    container_name: judge_worker
+    command: celery -A worker.celery worker --loglevel=info --concurrency=4
+    depends_on:
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    volumes:
+      - ./backend:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /tmp:/tmp
+
