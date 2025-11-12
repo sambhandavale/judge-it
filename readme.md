@@ -6,6 +6,20 @@ It is perfect for powering **competitive programming platforms**, **online code 
 
 ---
 
+## Tech Stack
+
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-0caa41?style=flat&logo=celery&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-dc382d?style=flat&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ed?style=flat&logo=docker&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
+![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
+
+---
+
 ## Features
 
 - **Secure Sandboxing:** All code is executed within isolated Docker containers with no network access, strict memory/CPU limits, and process restrictions.
