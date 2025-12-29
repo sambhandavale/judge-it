@@ -1,6 +1,6 @@
-# MyJudge: A Secure, Multi-Language Code Execution Engine
+# JudgeIt: A Secure, Multi-Language Code Execution Engine
 
-MyJudge is a high-performance backend service designed to securely compile and execute untrusted user-submitted code. It is built on a distributed microservice architecture using **Flask**, **Celery**, and **Docker**, ensuring that code execution is both isolated and scalable.  
+JudgeIt is a high-performance backend service designed to securely compile and execute untrusted user-submitted code. It is built on a distributed microservice architecture using **Flask**, **Celery**, and **Docker**, ensuring that code execution is both isolated and scalable.  
 
 It is perfect for powering **competitive programming platforms**, **online code editors**, or **e-learning websites**.
 
